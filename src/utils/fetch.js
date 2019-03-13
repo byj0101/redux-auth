@@ -47,6 +47,7 @@ function getAuthHeaders(url) {
 }
 
 function updateAuthCredentials(resp) {
+  console.log(resp)
   // check config apiUrl matches the current response url
   if (isApiRequest(resp.url)) {
     // set header for each key in `tokenFormat` config
